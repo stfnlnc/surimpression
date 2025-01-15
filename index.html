@@ -7,6 +7,7 @@
     <title>SurImpression +</title>
 </head>
 <body class="overflow-hidden">
+<!-- NAVBAR -->
 <nav
     class="fixed top-0 right-0 z-30 hidden translate-x-0 flex-col overflow-hidden border-l border-black bg-white text-white transition-transform duration-1000 w-[4.5rem] h-[100lvh] min-h-[800px] lg:flex xl:w-20">
     <div id="menu"
@@ -24,18 +25,19 @@
         <div class="absolute -translate-x-full rotate-90 transition-transform duration-500">Close</div>
     </div>
 </nav>
+<!-- MENU -->
 <div id="menu-container"
      class="fixed top-0 right-0 z-20 flex w-10/12 translate-x-full flex-row flex-wrap items-start justify-start gap-0 transition-transform duration-500 h-[100lvh] min-h-[800px] bg-e-blue">
-    <p class="pointer-events-none absolute top-0 left-0 z-30 mr-20 w-1/2 p-2 leading-tight text-white lg:text-[1.6rem] lg:w-4/5 lg:p-5 xl:text-[2rem] 2xl:text-[2.5rem]">
+    <p class="pointer-events-none absolute top-0 left-0 z-30 mr-20 padding text-white">
         SurImpression is a minimalist website crafted to transform exhibitions into immersive digital experiences. More than just a showcase, this
         website is a concept exploration designed by Studio Khi, merging bold aesthetics with intuitive functionality.
         <br><br>
         Studio Khi is a digital studio specializing in bespoke web design concepts for brands that want to stand out. SurImpression is one of our
         concept, thoughtfully designed to pair striking visuals with a seamless user experience.
     </p>
-    <div class="absolute bottom-0 left-0 z-40 mr-20 w-full border-t border-white p-2 lg:p-5">
+    <div class="absolute bottom-0 left-0 z-40 mr-20 w-full border-t border-white padding">
         <div class="w-fit group">
-            <a class="leading-tight text-white lg:text-[1.6rem] xl:text-[2rem] 2xl:text-[2.5rem]" href="">Contact the Studio</a>
+            <a class="text-white p" href="">Contact the Studio</a>
             <div class="w-full max-w-0 bg-white transition-all duration-500 h-[2px] group-hover:max-w-full"></div>
         </div>
     </div>
@@ -43,36 +45,39 @@
          src="./src/assets/images/bold-blur.avif"
          alt="">
 </div>
+<!-- TICKETS -->
 <div id="tickets-container"
      class="fixed top-0 right-0 z-20 flex w-8/12 translate-x-full flex-col items-start justify-between bg-black transition-transform duration-500 h-[100lvh] min-h-[800px]">
-    <p class="mr-20 p-2 leading-tight text-white lg:text-[1.6rem] lg:p-5 xl:text-[2rem] 2xl:text-[2.5rem]">
+    <p class="mr-20 padding text-white">
         Tickets no longer available.
     </p>
-    <div class="mr-20 w-full border-t border-white p-2 lg:p-5">
-        <div class="leading-tight text-white lg:text-[1.6rem] xl:text-[2rem] 2xl:text-[2.5rem]">Cart (0)</div>
+    <div class="mr-20 w-full border-t border-white padding">
+        <div class="text-white p">Cart (0)</div>
     </div>
 </div>
 <div id="smooth-wrapper">
     <div id="smooth-content">
+        <!-- HERO -->
         <div id="pixel-container" class="z-40 flex w-full flex-row flex-wrap gap-0 overflow-hidden h-[100lvh] min-h-[800px] bg-e-blue">
-            <div id="preloader-title" class="absolute top-0 left-0 z-10 flex flex-col p-2 lg:p-5">
+            <div id="preloader-title" class="absolute top-0 left-0 z-10 flex flex-col padding">
                 <div class="-my-10 overflow-hidden py-10">
-                    <p class="flex flex-row items-center leading-none line text-[12vw] lg:text-[5rem] xl:text-[6rem] 2xl:text-[8rem]">
+                    <div class="flex flex-row items-center line h1">
                         SurImpression
                         <svg xmlns="http://www.w3.org/2000/svg" class="mb-6 ml-4 h-auto w-[10vw] lg:w-[4rem] xl:w-[4.5rem] 2xl:w-[5.75rem]"
                              viewBox="0 0 92 91"
                              fill="none">
                             <path d="M0 49V42H42.4615V0H49.5385V42H92V49H49.5385V91H42.4615V49H0Z" fill="black"/>
                         </svg>
-                    </p>
+                    </div>
                 </div>
                 <div class="-my-10 overflow-hidden py-10">
-                    <p class="leading-none line text-[12vw] lg:text-[5rem] xl:text-[6rem] 2xl:text-[8rem]">
+                    <div class="line h1">
                         Labo School of
-                        Design</p>
+                        Design
+                    </div>
                 </div>
                 <div class="-my-10 overflow-hidden py-10">
-                    <p class="flex flex-row flex-wrap items-center leading-none line text-[12vw] lg:text-[5rem] xl:text-[6rem] 2xl:text-[8rem]">
+                    <div class="flex flex-row flex-wrap items-center line h1">
                         23.03.24
                         <svg xmlns="http://www.w3.org/2000/svg" class="mx-4 mb-6 h-auto w-[10vw] lg:w-[4rem] xl:w-[4.5rem] 2xl:w-[5.75rem]"
                              viewBox="0 0 103 93"
@@ -81,24 +86,25 @@
                                   fill="black"/>
                         </svg>
                         12.05.24
-                    </p>
+                    </div>
                 </div>
                 <p id="preloader-text"
-                   class="mt-6 translate-y-12 leading-tight opacity-0 transition-opacity text-[1.4rem] lg:text-[1.6rem] lg:mt-10 lg:w-3/4 xl:text-[2rem] 2xl:text-[2.5rem]">
+                   class="mt-6 translate-y-12 opacity-0 transition-opacity lg:w-3/4">
                     Bold fusion of typography, graphic design, and cutting-edge technologies through interactive installations and groundbreaking
                     visual
                     creations. A celebration of contemporary design where each piece redefines the rules of visual communication.
                 </p>
             </div>
         </div>
+        <!-- POSTS -->
         <main class="relative z-50 w-full transition-transform duration-1000">
             <div id="grid-container"
-                 class="relative z-20 -ml-px grid translate-x-px grid-cols-1 border-x border-black bg-white text-[1.375rem] lg:mr-20 lg:grid-cols-3">
+                 class="relative z-20 -ml-px grid translate-x-px grid-cols-1 border-x border-black bg-white lg:mr-20 lg:grid-cols-3">
                 <article
                     class="relative flex h-80 w-full flex-row flex-wrap items-center justify-center gap-0 overflow-hidden border-t border-r border-black pixel-grid-container group">
-                    <p class="pointer-events-none absolute top-2 left-2 z-20 text-black transition-colors duration-300 group-hover:text-white lg:top-5 lg:left-5">
+                    <p class="pointer-events-none absolute top-0 left-0 z-20 text-black transition-colors duration-300 group-hover:text-white padding">
                         Collective Oblique</p>
-                    <p class="pointer-events-none absolute bottom-2 left-2 z-20 italic text-black transition-colors duration-300 group-hover:text-white lg:bottom-5 lg:left-5">
+                    <p class="pointer-events-none absolute bottom-0 left-0 z-20 italic text-black transition-colors duration-300 group-hover:text-white padding">
                         Interactive Typography Projection <br>
                         Visible: All the time
                     </p>
@@ -108,9 +114,9 @@
                 </article>
                 <article
                     class="relative flex h-80 w-full flex-row flex-wrap items-center justify-center gap-0 overflow-hidden border-t border-r border-black pixel-grid-container group">
-                    <p class="pointer-events-none absolute top-2 left-2 z-20 text-black transition-colors duration-300 group-hover:text-white lg:top-5 lg:left-5">
+                    <p class="pointer-events-none absolute top-0 left-0 z-20 text-black transition-colors duration-300 group-hover:text-white padding">
                         Studio Aether</p>
-                    <p class="pointer-events-none absolute bottom-2 left-2 z-20 italic text-black transition-colors duration-300 group-hover:text-white lg:bottom-5 lg:left-5">
+                    <p class="pointer-events-none absolute bottom-0 left-0 z-20 italic text-black transition-colors duration-300 group-hover:text-white padding">
                         Virtual Reality Design Lab <br>
                         Visible: All the time
                     </p>
@@ -120,9 +126,9 @@
                 </article>
                 <article
                     class="relative flex h-80 w-full flex-row flex-wrap items-center justify-center gap-0 overflow-hidden border-t border-black pixel-grid-container group">
-                    <p class="pointer-events-none absolute top-2 left-2 z-20 text-black transition-colors duration-300 group-hover:text-white lg:top-5 lg:left-5">
+                    <p class="pointer-events-none absolute top-0 left-0 z-20 text-black transition-colors duration-300 group-hover:text-white padding">
                         Bold & Blur</p>
-                    <p class="pointer-events-none absolute bottom-2 left-2 z-20 italic text-black transition-colors duration-300 group-hover:text-white lg:bottom-5 lg:left-5">
+                    <p class="pointer-events-none absolute bottom-0 left-0 z-20 italic text-black transition-colors duration-300 group-hover:text-white padding">
                         AI Art Experiment <br>
                         Visible: All the time
                     </p>
@@ -132,9 +138,9 @@
                 </article>
                 <article
                     class="relative flex h-80 w-full flex-row flex-wrap items-center justify-center gap-0 overflow-hidden border-t border-r border-black pixel-grid-container group">
-                    <p class="pointer-events-none absolute top-2 left-2 z-20 text-black transition-colors duration-300 group-hover:text-white lg:top-5 lg:left-5">
+                    <p class="pointer-events-none absolute top-0 left-0 z-20 text-black transition-colors duration-300 group-hover:text-white padding">
                         Neon Syntax</p>
-                    <p class="pointer-events-none absolute bottom-2 left-2 z-20 italic text-black transition-colors duration-300 group-hover:text-white lg:bottom-5 lg:left-5">
+                    <p class="pointer-events-none absolute bottom-0 left-0 z-20 italic text-black transition-colors duration-300 group-hover:text-white padding">
                         Kinetic Sculpture <br>
                         Visible: All the time
                     </p>
@@ -144,9 +150,9 @@
                 </article>
                 <article
                     class="relative flex h-80 w-full flex-row flex-wrap items-center justify-center gap-0 overflow-hidden border-t border-r border-black pixel-grid-container group">
-                    <p class="pointer-events-none absolute top-2 left-2 z-20 text-black transition-colors duration-300 group-hover:text-white lg:top-5 lg:left-5">
+                    <p class="pointer-events-none absolute top-0 left-0 z-20 text-black transition-colors duration-300 group-hover:text-white padding">
                         Pixel Press</p>
-                    <p class="pointer-events-none absolute bottom-2 left-2 z-20 italic text-black transition-colors duration-300 group-hover:text-white lg:bottom-5 lg:left-5">
+                    <p class="pointer-events-none absolute bottom-0 left-0 z-20 italic text-black transition-colors duration-300 group-hover:text-white padding">
                         Augmented Reality Wall <br>
                         Visible: All the time
                     </p>
@@ -156,9 +162,9 @@
                 </article>
                 <article
                     class="relative flex h-80 w-full flex-row flex-wrap items-center justify-center gap-0 overflow-hidden border-t border-black pixel-grid-container group">
-                    <p class="pointer-events-none absolute top-2 left-2 z-20 text-black transition-colors duration-300 group-hover:text-white lg:top-5 lg:left-5">
+                    <p class="pointer-events-none absolute top-0 left-0 z-20 text-black transition-colors duration-300 group-hover:text-white padding">
                         MonoVision</p>
-                    <p class="pointer-events-none absolute bottom-2 left-2 z-20 italic text-black transition-colors duration-300 group-hover:text-white lg:bottom-5 lg:left-5">
+                    <p class="pointer-events-none absolute bottom-0 left-0 z-20 italic text-black transition-colors duration-300 group-hover:text-white padding">
                         Analog Photography Showcase <br>
                         Visible: All the time
                     </p>
@@ -168,9 +174,9 @@
                 </article>
                 <article
                     class="relative flex h-80 w-full flex-row flex-wrap items-center justify-center gap-0 overflow-hidden border-t border-r border-black pixel-grid-container group">
-                    <p class="pointer-events-none absolute top-2 left-2 z-20 text-black transition-colors duration-300 group-hover:text-white lg:top-5 lg:left-5">
+                    <p class="pointer-events-none absolute top-0 left-0 z-20 text-black transition-colors duration-300 group-hover:text-white padding">
                         HyperGrid</p>
-                    <p class="pointer-events-none absolute bottom-2 left-2 z-20 italic text-black transition-colors duration-300 group-hover:text-white lg:bottom-5 lg:left-5">
+                    <p class="pointer-events-none absolute bottom-0 left-0 z-20 italic text-black transition-colors duration-300 group-hover:text-white padding">
                         Interactive Light Installation <br>
                         Visible: All the time
                     </p>
@@ -180,9 +186,9 @@
                 </article>
                 <article
                     class="relative flex h-80 w-full flex-row flex-wrap items-center justify-center gap-0 overflow-hidden border-t border-r border-black pixel-grid-container group">
-                    <p class="pointer-events-none absolute top-2 left-2 z-20 text-black transition-colors duration-300 group-hover:text-white lg:top-5 lg:left-5">
+                    <p class="pointer-events-none absolute top-0 left-0 z-20 text-black transition-colors duration-300 group-hover:text-white padding">
                         Gradient Labs</p>
-                    <p class="pointer-events-none absolute bottom-2 left-2 z-20 italic text-black transition-colors duration-300 group-hover:text-white lg:bottom-5 lg:left-5">
+                    <p class="pointer-events-none absolute bottom-0 left-0 z-20 italic text-black transition-colors duration-300 group-hover:text-white padding">
                         Holographic Display <br>
                         Visible: All the time
                     </p>
@@ -192,9 +198,9 @@
                 </article>
                 <article
                     class="relative flex h-80 w-full flex-row flex-wrap items-center justify-center gap-0 overflow-hidden border-t border-black pixel-grid-container group">
-                    <p class="pointer-events-none absolute top-2 left-2 z-20 text-black transition-colors duration-300 group-hover:text-white lg:top-5 lg:left-5">
+                    <p class="pointer-events-none absolute top-0 left-0 z-20 text-black transition-colors duration-300 group-hover:text-white padding">
                         Flux Atelier</p>
-                    <p class="pointer-events-none absolute bottom-2 left-2 z-20 italic text-black transition-colors duration-300 group-hover:text-white lg:bottom-5 lg:left-5">
+                    <p class="pointer-events-none absolute bottom-0 left-0 z-20 italic text-black transition-colors duration-300 group-hover:text-white padding">
                         Projection Mapping Show <br>
                         Visible: Special event on Saturday evenings
                     </p>
@@ -204,9 +210,9 @@
                 </article>
                 <article
                     class="relative flex h-80 w-full flex-row flex-wrap items-center justify-center gap-0 overflow-hidden border-t border-r border-black pixel-grid-container group">
-                    <p class="pointer-events-none absolute top-2 left-2 z-20 text-black transition-colors duration-300 group-hover:text-white lg:top-5 lg:left-5">
+                    <p class="pointer-events-none absolute top-0 left-0 z-20 text-black transition-colors duration-300 group-hover:text-white padding">
                         Echo Designs</p>
-                    <p class="pointer-events-none absolute bottom-2 left-2 z-20 italic text-black transition-colors duration-300 group-hover:text-white lg:bottom-5 lg:left-5">
+                    <p class="pointer-events-none absolute bottom-0 left-0 z-20 italic text-black transition-colors duration-300 group-hover:text-white padding">
                         Sound-Responsive Installation <br>
                         Visible: Evening performances on Fridays
                     </p>
@@ -216,9 +222,9 @@
                 </article>
                 <article
                     class="relative flex h-80 w-full flex-row flex-wrap items-center justify-center gap-0 overflow-hidden border-t border-r border-black pixel-grid-container group">
-                    <p class="pointer-events-none absolute top-2 left-2 z-20 text-black transition-colors duration-300 group-hover:text-white lg:top-5 lg:left-5">
+                    <p class="pointer-events-none absolute top-0 left-0 z-20 text-black transition-colors duration-300 group-hover:text-white padding">
                         CTRL+Art</p>
-                    <p class="pointer-events-none absolute bottom-2 left-2 z-20 italic text-black transition-colors duration-300 group-hover:text-white lg:bottom-5 lg:left-5">
+                    <p class="pointer-events-none absolute bottom-0 left-0 z-20 italic text-black transition-colors duration-300 group-hover:text-white padding">
                         Interactive Coding Art <br>
                         Visible: Live sessions on weekends
                     </p>
@@ -228,9 +234,9 @@
                 </article>
                 <article
                     class="relative flex h-80 w-full flex-row flex-wrap items-center justify-center gap-0 overflow-hidden border-t border-black pixel-grid-container group">
-                    <p class="pointer-events-none absolute top-2 left-2 z-20 text-black transition-colors duration-300 group-hover:text-white lg:top-5 lg:left-5">
+                    <p class="pointer-events-none absolute top-0 left-0 z-20 text-black transition-colors duration-300 group-hover:text-white padding">
                         The Serif Collective</p>
-                    <p class="pointer-events-none absolute bottom-2 left-2 z-20 italic text-black transition-colors duration-300 group-hover:text-white lg:bottom-5 lg:left-5">
+                    <p class="pointer-events-none absolute bottom-0 left-0 z-20 italic text-black transition-colors duration-300 group-hover:text-white padding">
                         3D Printed Typography Sculpture <br>
                         Visible: All the time
                     </p>
@@ -240,9 +246,9 @@
                 </article>
                 <article
                     class="relative flex h-80 w-full flex-row flex-wrap items-center justify-center gap-0 overflow-hidden border-t border-r border-black pixel-grid-container group">
-                    <p class="pointer-events-none absolute top-2 left-2 z-20 text-black transition-colors duration-300 group-hover:text-white lg:top-5 lg:left-5">
+                    <p class="pointer-events-none absolute top-0 left-0 z-20 text-black transition-colors duration-300 group-hover:text-white padding">
                         Frame & Focus</p>
-                    <p class="pointer-events-none absolute bottom-2 left-2 z-20 italic text-black transition-colors duration-300 group-hover:text-white lg:bottom-5 lg:left-5">
+                    <p class="pointer-events-none absolute bottom-0 left-0 z-20 italic text-black transition-colors duration-300 group-hover:text-white padding">
                         Experimental Photography Series <br>
                         Visible: All the time
                     </p>
@@ -252,9 +258,9 @@
                 </article>
                 <article
                     class="relative flex h-80 w-full flex-row flex-wrap items-center justify-center gap-0 overflow-hidden border-t border-r border-black pixel-grid-container group">
-                    <p class="pointer-events-none absolute top-2 left-2 z-20 text-black transition-colors duration-300 group-hover:text-white lg:top-5 lg:left-5">
+                    <p class="pointer-events-none absolute top-0 left-0 z-20 text-black transition-colors duration-300 group-hover:text-white padding">
                         Inkform Studio</p>
-                    <p class="pointer-events-none absolute bottom-2 left-2 z-20 italic text-black transition-colors duration-300 group-hover:text-white lg:bottom-5 lg:left-5">
+                    <p class="pointer-events-none absolute bottom-0 left-0 z-20 italic text-black transition-colors duration-300 group-hover:text-white padding">
                         Illustrated Typography Gallery <br>
                         Visible: All the time
                     </p>
@@ -264,9 +270,9 @@
                 </article>
                 <article
                     class="relative flex h-80 w-full flex-row flex-wrap items-center justify-center gap-0 overflow-hidden border-t border-black pixel-grid-container group">
-                    <p class="pointer-events-none absolute top-2 left-2 z-20 text-black transition-colors duration-300 group-hover:text-white lg:top-5 lg:left-5">
+                    <p class="pointer-events-none absolute top-0 left-0 z-20 text-black transition-colors duration-300 group-hover:text-white padding">
                         Morph Collective</p>
-                    <p class="pointer-events-none absolute bottom-2 left-2 z-20 italic text-black transition-colors duration-300 group-hover:text-white lg:bottom-5 lg:left-5">
+                    <p class="pointer-events-none absolute bottom-0 left-0 z-20 italic text-black transition-colors duration-300 group-hover:text-white padding">
                         Digital Collage Art <br>
                         Visible: All the time
                     </p>
@@ -276,9 +282,9 @@
                 </article>
                 <article
                     class="relative flex h-80 w-full flex-row flex-wrap items-center justify-center gap-0 overflow-hidden border-t border-r border-b border-black pixel-grid-container group">
-                    <p class="pointer-events-none absolute top-2 left-2 z-20 text-black transition-colors duration-300 group-hover:text-white lg:top-5 lg:left-5">
+                    <p class="pointer-events-none absolute top-0 left-0 z-20 text-black transition-colors duration-300 group-hover:text-white padding">
                         Vectorium</p>
-                    <p class="pointer-events-none absolute bottom-2 left-2 z-20 italic text-black transition-colors duration-300 group-hover:text-white lg:bottom-5 lg:left-5">
+                    <p class="pointer-events-none absolute bottom-0 left-0 z-20 italic text-black transition-colors duration-300 group-hover:text-white padding">
                         Generative Illustration Wall <br>
                         Visible: Special interactive sessions on Saturdays
                     </p>
@@ -288,9 +294,9 @@
                 </article>
                 <article
                     class="relative flex h-80 w-full flex-row flex-wrap items-center justify-center gap-0 overflow-hidden border-t border-r border-b border-black pixel-grid-container group">
-                    <p class="pointer-events-none absolute top-2 left-2 z-20 text-black transition-colors duration-300 group-hover:text-white lg:top-5 lg:left-5">
+                    <p class="pointer-events-none absolute top-0 left-0 z-20 text-black transition-colors duration-300 group-hover:text-white padding">
                         Type Echo</p>
-                    <p class="pointer-events-none absolute bottom-2 left-2 z-20 italic text-black transition-colors duration-300 group-hover:text-white lg:bottom-5 lg:left-5">
+                    <p class="pointer-events-none absolute bottom-0 left-0 z-20 italic text-black transition-colors duration-300 group-hover:text-white padding">
                         Photographic Typography Art <br>
                         Visible: All the time
                     </p>
@@ -300,9 +306,9 @@
                 </article>
                 <article
                     class="relative flex h-80 w-full flex-row flex-wrap items-center justify-center gap-0 overflow-hidden border-t border-b border-black pixel-grid-container group">
-                    <p class="pointer-events-none absolute top-2 left-2 z-20 text-black transition-colors duration-300 group-hover:text-white lg:top-5 lg:left-5">
+                    <p class="pointer-events-none absolute top-0 left-0 z-20 text-black transition-colors duration-300 group-hover:text-white padding">
                         Line & Layer</p>
-                    <p class="pointer-events-none absolute bottom-2 left-2 z-20 italic text-black transition-colors duration-300 group-hover:text-white lg:bottom-5 lg:left-5">
+                    <p class="pointer-events-none absolute bottom-0 left-0 z-20 italic text-black transition-colors duration-300 group-hover:text-white padding">
                         Augmented Digital Art Installation <br>
                         Visible: All the time
                     </p>
