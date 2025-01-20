@@ -4,12 +4,17 @@ import './js/animation/pixel-grid.js'
 import './js/animation/pixel-menu.js'
 import './js/animation/text-reveal.js'
 import './js/nav/menu.js'
+import './js/nav/menu-mobile.js'
 
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import {ScrollSmoother} from "gsap/ScrollSmoother";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
+
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
 
 // create the scrollSmoother before your scrollTriggers
 ScrollSmoother.create({

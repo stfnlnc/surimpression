@@ -4,10 +4,17 @@ const menu = document.getElementById('menu')
 
 let toggle = false
 
+let size = 30
+if (window.innerWidth < 1024) {
+    size = 25
+} else if (window.innerWidth < 640) {
+    size = 20
+}
+
 const menuContainer = document.querySelector("#menu-container")
 const pixelMenuWidth = menuContainer.getBoundingClientRect().width
 const pixelMenuHeight = menuContainer.getBoundingClientRect().height
-let pixelMenuSize = menuContainer.getBoundingClientRect().width / 30
+let pixelMenuSize = menuContainer.getBoundingClientRect().width / size
 const numMenuCols = Math.ceil(pixelMenuWidth / pixelMenuSize)
 const numMenuRows = Math.ceil(pixelMenuHeight / pixelMenuSize)
 const numMenuPixels = numMenuCols * numMenuRows

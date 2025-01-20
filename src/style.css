@@ -14,7 +14,7 @@
     }
 
     h1, .h1 {
-        @apply text-[12vw] lg:text-[5.5rem] xl:text-[7rem] 2xl:text-[9vw] leading-[0.9];
+        @apply text-[12vw] lg:text-[5.5rem] xl:text-[7rem] 2xl:text-[8vw] leading-[0.9];
     }
 
     p, .p {
@@ -22,11 +22,11 @@
     }
 
     article > p {
-        @apply text-[1.2rem] lg:text-[1.4rem] xl:text-[1.6rem] 2xl:text-[1.6vw] leading-[1.2];
+        @apply text-[1.2rem] lg:text-[1.2rem] xl:text-[1.6rem] 2xl:text-[1.6vw] leading-[1.2];
     }
 
     .padding {
-        @apply p-4 md:p-4 lg:p-5 xl:p-5 2xl:p-[5vw]
+        @apply p-4 md:p-8 lg:p-8 xl:p-8 2xl:p-[1vw]
     }
 
     .pixel {

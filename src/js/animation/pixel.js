@@ -4,11 +4,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // PRELOADER
     // CREATE AND REVEAL PIXEL
+    let size = 10
+    if (window.innerWidth < 1024) {
+        size = 7
+    } else if (window.innerWidth < 640) {
+        size = 5
+    }
 
     const pixelContainer = document.getElementById("pixel-container")
     const pixelContainerWidth = document.getElementById("pixel-container").getBoundingClientRect().width
     const pixelContainerHeight = document.getElementById("pixel-container").getBoundingClientRect().height
-    let pixelSize = pixelContainer.getBoundingClientRect().width / 10
+    let pixelSize = pixelContainer.getBoundingClientRect().width / size
     const numCols = Math.ceil(pixelContainerWidth / pixelSize)
     const numRows = Math.ceil(pixelContainerHeight / pixelSize)
     const numPixels = numCols * numRows
@@ -58,6 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ease: "power3.inOut"
         })
         pixelContainer.classList.remove("bg-e-blue")
+        pixelContainer.classList.add("bg-white")
         pixels.map(pixel => {
             pixel.style.display = "none"
             pixel.remove()
@@ -66,9 +73,8 @@ document.addEventListener('DOMContentLoaded', () => {
         navBar.classList.remove("translate-x-full")
         setTimeout(() => {
             body.classList.remove("overflow-hidden")
+            main.classList.remove("translate-y-0")
             main.classList.add("-translate-y-40")
         }, 2000)
     }, 4000)
-
-
 })

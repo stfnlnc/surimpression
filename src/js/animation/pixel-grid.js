@@ -1,10 +1,16 @@
 import {getRandomInt} from "../inc/random-int.js";
 
+let size = 20
+if (window.innerWidth < 1024) {
+    size = 15
+} else if (window.innerWidth < 640) {
+    size = 10
+}
 
 const pixelGridContainers = document.querySelectorAll(".pixel-grid-container")
 const pixelGridWidth = pixelGridContainers[0].getBoundingClientRect().width
 const pixelGridHeight = pixelGridContainers[0].getBoundingClientRect().height
-let pixelGridSize = pixelGridContainers[0].getBoundingClientRect().width / 20
+let pixelGridSize = pixelGridContainers[0].getBoundingClientRect().width / size
 const numGridCols = Math.ceil(pixelGridWidth / pixelGridSize)
 const numGridRows = Math.ceil(pixelGridHeight / pixelGridSize)
 const numGridPixels = numGridCols * numGridRows
